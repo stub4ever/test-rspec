@@ -23,11 +23,10 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
-  
-  
+  gem 'rspec-rails', '~> 3.0'
+
 end
 
 group :production do
   gem 'rails_12factor'
 end
-gem "rspec-rails", :group => [:development, :test]

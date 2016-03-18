@@ -194,7 +194,7 @@ DEPENDENCIES
   rails (= 4.2.6)
   rails_12factor
   redis
-  rspec-rails
+  rspec-rails (~> 3.0)
   sass-rails
   simple_form
   spring
