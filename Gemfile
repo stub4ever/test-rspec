@@ -25,6 +25,8 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
   gem "capybara"
+  gem "database_cleaner" #restore the state of the database after linted factories
+  gem "factory_girl_rails"
 end
 
 group :test do
