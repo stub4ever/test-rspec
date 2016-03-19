@@ -1,3 +1,6 @@
-example_id                                       | status | run_time      |
------------------------------------------------- | ------ | ------------- |
-./spec/features/user_submits_a_link_spec.rb[1:1] | failed | 14.43 seconds |
+example_id                                         | status | run_time        |
+-------------------------------------------------- | ------ | --------------- |
+./spec/features/user_submits_a_link_spec.rb[1:1]   | passed | 0.50061 seconds |
+./spec/features/user_submits_a_link_spec.rb[1:2:1] | passed | 0.02577 seconds |
+./spec/models/link_spec.rb[1:1]                    | passed | 0.02368 seconds |
+./spec/models/link_spec.rb[1:2]                    | passed | 0.00418 seconds |

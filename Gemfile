@@ -15,7 +15,6 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
-gem "capybara"
 
 group :development, :test do
   gem 'binding_of_caller'
@@ -25,7 +24,11 @@ group :development, :test do
   gem 'pry-rails'
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
+  gem "capybara"
+end
 
+group :test do
+  gem "shoulda-matchers", "< 3.0.0", require: false
 end
 
 group :production do

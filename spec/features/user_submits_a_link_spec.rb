@@ -26,6 +26,26 @@ RSpec.feature "User submits a link" do
     #have_link is capybara, and returns true if it finds a link.
     #Rspec look auto for the method #has_link? when it sees #have_link
     expect(page).to have_link link_title, href: link_url
+  end
 
+  #context. As you might guess, it allows you to provide additional context to wrap one or more scenarios.”
+  context "the form is invalid" do
+    scenario "they see a useful error message" do
+      link_title = "Home - Stuboki"
+      link_url = "http://stuboki.com"
+
+      visit root_path
+      click_on "Submit a new link"
+      fill_in "link_title", with: link_title
+
+      click_on "submit"
+
+      #have_content from Capybara > will look on the page for the given text
+      expect(page).to have_content "Url can't be blank"
+    end
   end
 end
+
+
+
+
